@@ -219,7 +219,7 @@ btn.onclick = function () {
       mainDiv.appendChild(repoName); //Add repos stars
 
       var starSpan = document.createElement("span");
-      var starText = document.createTextNode(" Stars:".concat(repo.stargazers_count, " "));
+      var starText = document.createTextNode("Stars: ".concat(repo.stargazers_count, " "));
       starSpan.append(starText);
       mainDiv.appendChild(starSpan); //Add link to repos
 

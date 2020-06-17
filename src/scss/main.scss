@@ -50,7 +50,7 @@ body {
       box-shadow: 3px 3px paleturquoise;
       font: bold 1.5em monospace;
       padding: 20px;
-      margin-right: 30px;
+      margin: 0 30px 30px 0;
       letter-spacing: 0.3px;
       color: white;
     }
@@ -79,7 +79,7 @@ body {
     box-shadow: 3px 3px 15px #fa709a;
     border-radius: 5px 5px 70px 5px;
     color: #000;
-    padding: 30px;
+    padding: 50px;
     width: 100%;
     margin-top: 50px;
     font: bold 1.7em monospace;
@@ -87,9 +87,18 @@ body {
 
     div {
       margin-bottom: 50px;
-      word-spacing: 20px;
       padding-bottom: 12px;
       border-bottom: 3px solid #000;
+
+      span {
+        float: right;
+      }
+
+      a {
+        color: #000;
+        float: right;
+        margin-right: 30px;
+      }
     }
   }
 }

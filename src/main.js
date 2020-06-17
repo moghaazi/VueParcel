@@ -24,7 +24,7 @@ btn.onclick = () => {
 
         //Add repos stars
         let starSpan = document.createElement(`span`)
-        let starText = document.createTextNode(` Stars:${repo.stargazers_count} `)
+        let starText = document.createTextNode(`Stars: ${repo.stargazers_count} `)
         starSpan.append(starText)
         mainDiv.appendChild(starSpan)
 
