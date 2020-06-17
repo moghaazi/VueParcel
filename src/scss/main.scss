@@ -1,0 +1,95 @@
+@import 'layout/header';
+// @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+
+body {
+  background-color: #121212;
+  scroll-behavior: smooth;
+  color: white;
+  font: 1em sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+/* Custom Scroll Bar ============================== */
+// For Firefox
+:root {
+  scrollbar-color: #666 #222 !important;
+  scrollbar-width: thin !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #222;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 50px;
+}
+
+.repos-cont {
+  margin-top: 50px;
+  display: grid;
+  place-items: center;
+  place-content: center;
+
+  // Get repos
+  .get-repos {
+    input {
+      all: unset;
+      width: 400px;
+      box-shadow: 3px 3px paleturquoise;
+      font: bold 1.5em monospace;
+      padding: 20px;
+      margin-right: 30px;
+      letter-spacing: 0.3px;
+      color: white;
+    }
+
+    button {
+      all: unset;
+      background: linear-gradient(to right, #ff9966, #ff5e62);
+      padding: 20px;
+      background-repeat: 3px;
+      color: #000;
+      font: bold 1.7em monospace;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 3px 3px 10px #ff5e62;
+      }
+    }
+  }
+
+  //Show Repos
+  .show-repos {
+    background-color: #fee140;
+    background-image: linear-gradient(90deg, #fee140 0%, #fa709a 100%);
+    box-shadow: 3px 3px 15px #fa709a;
+    border-radius: 5px 5px 70px 5px;
+    color: #000;
+    padding: 30px;
+    width: 100%;
+    margin-top: 50px;
+    font: bold 1.7em monospace;
+    margin-bottom: 50px;
+
+    div {
+      margin-bottom: 50px;
+      word-spacing: 20px;
+      padding-bottom: 12px;
+      border-bottom: 3px solid #000;
+    }
+  }
+}
